@@ -1,0 +1,27 @@
+# RevisaoJAVA
+Revisao
+package Cadastro;
+
+public class Cadastro {
+
+	String nome, cargo;
+	float altura;
+	String idade;
+	int matricula;
+	static int m = 1;
+	
+public Cadastro() {
+	matricula = m++;
+}
+	public void cadastrar(String nome, String idade, float altura) {
+		this.nome = nome;
+		this.idade = idade;
+		this.altura = altura;
+
+	}
+	public void exibir() {
+		System.out.println("Nome:" + nome +"\nMatricula:"+ matricula);
+		System.out.println("\tIdade:" + idade +"\n\taltura:"+ altura);
+	}
+	
+}
